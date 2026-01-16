@@ -28,6 +28,8 @@ In the project directory, you can run:
 
 For more details see the Create React App documentation: https://facebook.github.io/create-react-app/docs/getting-started
 
+```mermaid
+
 flowchart TD
     A([🎤 User Speaks]):::user --> B[[🗣️ Speech-to-Text]]:::media
     B --> C{⚙️ Rule Engine<br/>Decides Next Step}:::logic
@@ -45,5 +47,7 @@ flowchart TD
     classDef doc fill:#E1F5FE,stroke:#0288D1,stroke-width:2px;
     classDef schedule fill:#FFFDE7,stroke:#F9A825,stroke-width:2px;
     classDef notify fill:#FCE4EC,stroke:#D81B60,stroke-width:2px;
+
+```
 
 
