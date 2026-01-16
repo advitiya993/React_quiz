@@ -29,24 +29,24 @@ In the project directory, you can run:
 For more details see the Create React App documentation: https://facebook.github.io/create-react-app/docs/getting-started
 
 ```mermaid
-
-flowchart TD
+flowchart LR
     A([🎤 User Speaks]):::user --> B[[🗣️ Speech-to-Text]]:::media
-    B --> C{⚙️ Rule Engine<br/>Decides Next Step}:::logic
+    B --> C{⚙️ Rule Engine<br/>Next Question}:::logic
     C --> D[[🧠 LLM Paraphrasing<br/>& Clarification]]:::llm
     D --> E[(🗂️ Answer Stored)]:::data
-    E --> F[[📄 Form Auto-Populated<br/>PDF Generated]]:::doc
+    E --> F[[📄 Form Auto-Filled<br/>PDF Generated]]:::doc
     F --> G([⏰ Reminder Scheduled]):::schedule
     G --> H[[📩 SMS Preview Sent]]:::notify
 
-    classDef user fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px;
-    classDef media fill:#E8F5E9,stroke:#43A047,stroke-width:2px;
-    classDef logic fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px;
-    classDef llm fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px;
-    classDef data fill:#ECEFF1,stroke:#546E7A,stroke-width:2px;
-    classDef doc fill:#E1F5FE,stroke:#0288D1,stroke-width:2px;
-    classDef schedule fill:#FFFDE7,stroke:#F9A825,stroke-width:2px;
-    classDef notify fill:#FCE4EC,stroke:#D81B60,stroke-width:2px;
+    classDef user fill:#1E3A8A,stroke:#0F172A,stroke-width:2px,color:#FFFFFF;
+    classDef media fill:#14532D,stroke:#052E16,stroke-width:2px,color:#FFFFFF;
+    classDef logic fill:#7C2D12,stroke:#431407,stroke-width:2px,color:#FFFFFF;
+    classDef llm fill:#581C87,stroke:#2E1065,stroke-width:2px,color:#FFFFFF;
+    classDef data fill:#334155,stroke:#020617,stroke-width:2px,color:#FFFFFF;
+    classDef doc fill:#0C4A6E,stroke:#082F49,stroke-width:2px,color:#FFFFFF;
+    classDef schedule fill:#713F12,stroke:#422006,stroke-width:2px,color:#FFFFFF;
+    classDef notify fill:#831843,stroke:#4A044E,stroke-width:2px,color:#FFFFFF;
+
 
 ```
 
