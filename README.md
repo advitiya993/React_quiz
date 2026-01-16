@@ -29,11 +29,21 @@ In the project directory, you can run:
 For more details see the Create React App documentation: https://facebook.github.io/create-react-app/docs/getting-started
 
 flowchart TD
-    A[User Speaks] --> B[Speech-to-Text]
-    B --> C[Rule Engine<br/>Determines Next Question]
-    C --> D[LLM Paraphrasing<br/>and Clarification]
-    D --> E[Validated Answer Stored]
-    E --> F[Form Auto-Populated<br/>and PDF Generated]
-    F --> G[Reminder Scheduled]
-    G --> H[SMS Preview Sent]
+    A([🎤 User Speaks]):::user --> B[[🗣️ Speech-to-Text]]:::media
+    B --> C{⚙️ Rule Engine<br/>Decides Next Step}:::logic
+    C --> D[[🧠 LLM Paraphrasing<br/>& Clarification]]:::llm
+    D --> E[(🗂️ Answer Stored)]:::data
+    E --> F[[📄 Form Auto-Populated<br/>PDF Generated]]:::doc
+    F --> G([⏰ Reminder Scheduled]):::schedule
+    G --> H[[📩 SMS Preview Sent]]:::notify
+
+    classDef user fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px;
+    classDef media fill:#E8F5E9,stroke:#43A047,stroke-width:2px;
+    classDef logic fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px;
+    classDef llm fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px;
+    classDef data fill:#ECEFF1,stroke:#546E7A,stroke-width:2px;
+    classDef doc fill:#E1F5FE,stroke:#0288D1,stroke-width:2px;
+    classDef schedule fill:#FFFDE7,stroke:#F9A825,stroke-width:2px;
+    classDef notify fill:#FCE4EC,stroke:#D81B60,stroke-width:2px;
+
 
