@@ -47,7 +47,7 @@ flowchart LR
     classDef schedule fill:#713F12,stroke:#422006,stroke-width:2px,color:#FFFFFF;
     classDef notify fill:#831843,stroke:#4A044E,stroke-width:2px,color:#FFFFFF;
 
-    flowchart LR
+flowchart LR
     U[User]:::user --> V[Voice Input]:::voice
     V --> A[Agent System]:::agent
     A --> O[Output Response]:::output
