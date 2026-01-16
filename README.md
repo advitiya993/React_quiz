@@ -27,3 +27,13 @@ In the project directory, you can run:
 - `npm run eject` — Ejects the configuration (one-way operation).
 
 For more details see the Create React App documentation: https://facebook.github.io/create-react-app/docs/getting-started
+
+flowchart TD
+    A[User Speaks] --> B[Speech-to-Text]
+    B --> C[Rule Engine<br/>Determines Next Question]
+    C --> D[LLM Paraphrasing<br/>and Clarification]
+    D --> E[Validated Answer Stored]
+    E --> F[Form Auto-Populated<br/>and PDF Generated]
+    F --> G[Reminder Scheduled]
+    G --> H[SMS Preview Sent]
+
