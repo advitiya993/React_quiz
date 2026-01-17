@@ -29,13 +29,23 @@ In the project directory, you can run:
 For more details see the Create React App documentation: https://facebook.github.io/create-react-app/docs/getting-started
 
 ```mermaid
-flowchart TB
-    UC[User Channels<br/>Voice, SMS, WhatsApp]
-    MCP[MCP Orchestration]
-    TL[Tools]
-    SL[Storage and Audit]
+flowchart LR
+    VA[Voice Agent]
+    IA[Intent Agent]
+    FA[Form Agent]
+    DA[Document Agent]
+    CA[Compliance Agent]
+    AA[Audit Agent]
 
-    UC --> MCP --> TL --> SL
+    classDef agent fill:#2E7D32,stroke:#1B5E20,stroke-width:2px
+
+    class VA agent
+    class IA agent
+    class FA agent
+    class DA agent
+    class CA agent
+    class AA agent
+
 
 ```
 
