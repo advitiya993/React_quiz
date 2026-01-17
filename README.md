@@ -29,7 +29,7 @@ In the project directory, you can run:
 For more details see the Create React App documentation: https://facebook.github.io/create-react-app/docs/getting-started
 
 ```mermaid
-flowchart LR
+flowchart TB
     U[User]
     STT[Speech to Text]
     RE[Rule Engine]
