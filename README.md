@@ -31,10 +31,10 @@ For more details see the Create React App documentation: https://facebook.github
 ```mermaid
 
 flowchart TB
-    UC[User Channels<br/>Voice | SMS | WhatsApp]
+    UC[User Channels<br/>Voice<br/>SMS<br/>WhatsApp]
     MCP[Agent Orchestration Layer (MCP)]
     TL[Tool Layer]
-    SL[Storage & Audit Layer]
+    SL[Storage and Audit Layer]
 
     UC --> MCP
     MCP --> TL
@@ -49,6 +49,7 @@ flowchart TB
     class MCP mcp
     class TL tools
     class SL storage
+
 
 
 
