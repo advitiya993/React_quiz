@@ -35,15 +35,16 @@ flowchart LR
     V --> A[Agent System]
     A --> O[Output Response]
 
-    classDef user fill:#E3F2FD,stroke:#1565C0,stroke-width:2px
-    classDef voice fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px
-    classDef agent fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
-    classDef output fill:#FCE4EC,stroke:#AD1457,stroke-width:2px
+    classDef user fill:#1E88E5,stroke:#0D47A1,stroke-width:2px
+    classDef voice fill:#FB8C00,stroke:#E65100,stroke-width:2px
+    classDef agent fill:#43A047,stroke:#1B5E20,stroke-width:2px
+    classDef output fill:#D81B60,stroke:#880E4F,stroke-width:2px
 
     class U user
     class V voice
     class A agent
     class O output
+
 
 
 
