@@ -30,20 +30,26 @@ For more details see the Create React App documentation: https://facebook.github
 
 ```mermaid
 
-flowchart LR
-    U[User] --> V[Voice Input]
-    V --> A[Agent System]
-    A --> O[Output Response]
+flowchart TB
+    UC[User Channels<br/>Voice | SMS | WhatsApp]
+    MCP[Agent Orchestration Layer (MCP)]
+    TL[Tool Layer]
+    SL[Storage & Audit Layer]
 
-    classDef user fill:#1E88E5,stroke:#0D47A1,stroke-width:2px
-    classDef voice fill:#FB8C00,stroke:#E65100,stroke-width:2px
-    classDef agent fill:#43A047,stroke:#1B5E20,stroke-width:2px
-    classDef output fill:#D81B60,stroke:#880E4F,stroke-width:2px
+    UC --> MCP
+    MCP --> TL
+    TL --> SL
 
-    class U user
-    class V voice
-    class A agent
-    class O output
+    classDef channels fill:#1565C0,stroke:#0D47A1,stroke-width:2px
+    classDef mcp fill:#2E7D32,stroke:#1B5E20,stroke-width:2px
+    classDef tools fill:#F9A825,stroke:#F57F17,stroke-width:2px
+    classDef storage fill:#6A1B9A,stroke:#4A148C,stroke-width:2px
+
+    class UC channels
+    class MCP mcp
+    class TL tools
+    class SL storage
+
 
 
 
