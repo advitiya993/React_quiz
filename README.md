@@ -30,36 +30,22 @@ For more details see the Create React App documentation: https://facebook.github
 
 ```mermaid
 flowchart TB
-    U[User]
-    STT[Speech to Text]
-    RE[Rule Engine]
-    LLM[Large Language Model]
-    DB[Storage]
-    PDF[PDF Generator]
-    N[Notification Service]
+    UC[User Channels<br/>Voice<br/>SMS<br/>WhatsApp]
+    TL[Tool Layer (OCR,STT)]
+    SL[Storage and Audit Layer]
 
-    U --> STT
-    STT --> RE
-    RE --> LLM
-    LLM --> DB
-    DB --> PDF
-    PDF --> N
+    UC --> TL 
+    TL --> SL
+    
 
-    classDef user fill:#1E88E5,stroke:#0D47A1,stroke-width:2px
-    classDef stt fill:#6D4C41,stroke:#3E2723,stroke-width:2px
-    classDef rule fill:#F9A825,stroke:#F57F17,stroke-width:2px
-    classDef llm fill:#8E24AA,stroke:#4A148C,stroke-width:2px
-    classDef storage fill:#2E7D32,stroke:#1B5E20,stroke-width:2px
-    classDef pdf fill:#C62828,stroke:#B71C1C,stroke-width:2px
-    classDef notify fill:#00695C,stroke:#004D40,stroke-width:2px
+    classDef channels fill:#1565C0,stroke:#0D47A1,stroke-width:2px
+    classDef tools fill:#F9A825,stroke:#F57F17,stroke-width:2px
+    classDef storage fill:#6A1B9A,stroke:#4A148C,stroke-width:2px
 
-    class U user
-    class STT stt
-    class RE rule
-    class LLM llm
-    class DB storage
-    class PDF pdf
-    class N notify
+    class UC channels
+    class TL tools
+    class SL storage
+
 
 
 
