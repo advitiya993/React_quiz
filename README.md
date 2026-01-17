@@ -31,7 +31,7 @@ For more details see the Create React App documentation: https://facebook.github
 ```mermaid
 flowchart TB
     UC[User Channels<br/>Voice<br/>SMS<br/>WhatsApp]
-    TL[Tool Layer (OCR,STT)]
+    TL[Tool Layer]
     SL[Storage and Audit Layer]
 
     UC --> TL 
